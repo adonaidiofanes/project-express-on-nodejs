@@ -10,9 +10,6 @@ router.get('/', async function(req, res, next) {
   const users = await User.findAll();
   console.log(users);
   res.end(JSON.stringify(users));
-  // console.log("Jane's auto-generated ID:", jane.id);
-  // res.send('dog');
-  // const users = await User.create({ firstName: "Jane", lastName: "Doe" });
 });
 
 module.exports = router;
