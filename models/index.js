@@ -31,6 +31,10 @@ Object.keys(db).forEach(modelName => {
   }
 });
 
+// Relacionamentos
+db.Company.hasMany(db.Project);
+db.Project.belongsTo(db.Company);
+
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
 
