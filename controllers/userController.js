@@ -1,5 +1,5 @@
 const model = require('../models');
-const { User } = model;
+const { User, Project } = model;
 
 async function getAllUsers(req, res){
     const users = await User.findAll();
