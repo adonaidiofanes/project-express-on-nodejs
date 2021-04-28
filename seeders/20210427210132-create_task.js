@@ -6,12 +6,14 @@ module.exports = {
       {
         description: "Add button on index page",
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        projectId: 1,
       },
       {
         description: "Add method for get all users",
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        projectId: 2,
       },
     ], {});
   },

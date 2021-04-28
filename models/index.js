@@ -35,6 +35,9 @@ Object.keys(db).forEach(modelName => {
 db.Company.hasMany(db.Project);
 db.Project.belongsTo(db.Company);
 
+db.Project.hasOne(db.Task);
+db.Task.belongsTo(db.Project);
+
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
 
