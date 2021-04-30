@@ -32,11 +32,17 @@ Object.keys(db).forEach(modelName => {
 });
 
 // Relacionamentos
-db.Company.hasMany(db.Project);
-db.Project.belongsTo(db.Company);
+// db.Company.hasMany(db.Project);
+// db.Project.belongsTo(db.Company);
 
-db.Project.hasOne(db.Task);
-db.Task.belongsTo(db.Project);
+// db.Project.hasMany(db.Task);
+// db.Task.belongsTo(db.Project);
+
+// db.User.belongsToMany(db.Project, { through: 'User_Project' });
+// db.Project.belongsToMany(db.User, { through: 'User_Project' });
+
+// db.User.hasOne(db.Address);
+// db.Address.belongsTo(db.User);
 
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
